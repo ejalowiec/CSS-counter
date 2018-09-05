@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .counter div:nth-child(1) {
+            font-size: 100px;
+        }
+
+        .counter {
+            height: 100%;
+            width: 100%;
+        }
+
+        .counter div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: verdana;
+            font-size: 330px;
+            color: #fff;
+            opacity: 0;
+            animation: love 11s linear infinite both;
+        }
+
+        div:nth-child(10) {
+            animation-delay: 1s;
+                }
+        
+        div:nth-child(9) {
+            animation-delay: 2s;
+        }
+        
+        div:nth-child(8) {
+            animation-delay: 3s;
+        }
+        
+        div:nth-child(7) {
+            animation-delay: 4s;
+        }
+        
+        div:nth-child(6) {
+            animation-delay: 5s;
+        }
+        
+        div:nth-child(5) {
+            animation-delay: 6s;
+        }
+        
+        div:nth-child(4) {
+            animation-delay: 7s;
+        }
+        
+        div:nth-child(3) {
+            animation-delay: 8s;
+        }
+        
+        div:nth-child(2) {
+            animation-delay: 9s;
+        }
+        
+        div:nth-child(1) {
+            animation-delay: 10s;
+        }
+        
+        @keyframes love {
+            0.001% {
+                opacity: 1;
+            }
+           9.09% {
+                opacity: 1;
+            }
+            9.0901% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="counter">
+        <div>I love CSS!</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+
+</html>
